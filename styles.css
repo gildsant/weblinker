@@ -8,21 +8,20 @@ h1 {
     font-weight: 700;
 }
 
-footer a {
-    font-size: 1.5rem;
+body h5.text-secondary {
+    font-family: monospace;
+    font-weight: 700;
 }
 
-p.text-secondary {
-    font-family: Times;
+footer a {
+    font-size: 1.8rem;
+}
+
+body p.text-secondary {
+    font-family: system-ui;
     font-style: italic;
     font-size: 1.0rem;
-    font-weight: 700;
-    
-}
-
-p.text-light {
-   font-family: system-ui; 
-   font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .custom-btn {
@@ -37,3 +36,17 @@ p.text-light {
     background-color: #363636;
     border-color: white;
 }
+
+footer a:hover {
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.meteor {
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0));
+    animation: meteor 3s linear infinite;
+}
+
