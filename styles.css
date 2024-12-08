@@ -13,22 +13,22 @@ footer a {
 }
 
 p.text-secondary {
-    font-family: Perpetua;
+    font-family: Times;
     font-style: italic;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     
 }
 
 p.text-light {
-   font-family: Consolas; 
-   font-size: 1.3rem;
+   font-family: Times; 
+   font-size: 1.5rem;
 }
 
 .custom-btn {
     background-color: #0a06fc6c;
     border-color: #0a06fc6c;
     color: #ffffff;
-    font-family: Consolas, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 1.2rem;
 }
 
