@@ -25,14 +25,14 @@ p.text-light {
 }
 
 .custom-btn {
-    background-color: #0a06fc6c; /* Azul claro */
-    border-color: #0a06fc6c; /* Azul claro para borda */
-    color: #ffffff; /* Texto branco */
-    font-family: Consolas, sans-serif; /* Fonte personalizada */
-    font-size: 1.2rem; /* Tamanho da fonte */
+    background-color: #0a06fc6c;
+    border-color: #0a06fc6c;
+    color: #ffffff;
+    font-family: Consolas, sans-serif;
+    font-size: 1.2rem;
 }
 
 .custom-btn:hover {
-    background-color: #363636; /* Azul ainda mais suave para o hover */
-    border-color: white; /* Bordas mais suaves no hover */
+    background-color: #363636;
+    border-color: white;
 }
