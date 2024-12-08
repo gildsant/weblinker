@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+      
+}
+
+h1 {
+    font-family: Arial;
+    font-weight: 700;
+}
+
+footer a {
+    font-size: 1.5rem;
+}
+
+p.text-secondary {
+    font-family: Perpetua;
+    font-style: italic;
+    font-size: 1.4rem;
+    
+}
+
+p.text-light {
+   font-family: Consolas; 
+   font-size: 1.3rem;
+}
+
+.custom-btn {
+    background-color: #0a06fc6c; /* Azul claro */
+    border-color: #0a06fc6c; /* Azul claro para borda */
+    color: #ffffff; /* Texto branco */
+    font-family: Consolas, sans-serif; /* Fonte personalizada */
+    font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+.custom-btn:hover {
+    background-color: #363636; /* Azul ainda mais suave para o hover */
+    border-color: white; /* Bordas mais suaves no hover */
+}
