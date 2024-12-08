@@ -15,13 +15,14 @@ footer a {
 p.text-secondary {
     font-family: Times;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
+    font-weight: 700;
     
 }
 
 p.text-light {
    font-family: Times; 
-   font-size: 1.5rem;
+   font-size: 1.3rem;
 }
 
 .custom-btn {
