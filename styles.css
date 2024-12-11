@@ -1,33 +1,36 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-      
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
 }
 
+/* Heading styles */
 h1 {
     font-family: Arial;
     font-weight: 700;
 }
 
 body h5.text-secondary {
-    font-family: monospace;
+    font-family: monospace, Arial;
     font-weight: 700;
 }
 
-footer a {
-    font-size: 1.7rem;
-}
-
 body p.text-secondary {
-    font-family: arial;
+    font-family: monospace, Arial;
     font-style: italic;
     font-weight: 700;
 }
 
+/* Button styles */
 .custom-btn {
     background-color: #0a06fc6c;
     border-color: #0a06fc6c;
     color: #ffffff;
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 1.2rem;
 }
 
@@ -36,8 +39,59 @@ body p.text-secondary {
     border-color: white;
 }
 
+/* Footer styles */
+footer {
+    background-color: transparent;
+    color: #ffffff;
+    position: relative;
+}
+
+footer a {
+    font-size: 1.7rem;
+}
+
 footer a:hover {
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
 }
 
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* Stars container styles */
+#stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.stars {
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: twinkle 2s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+/* Keyframes for star animation */
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
