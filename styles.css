@@ -15,12 +15,12 @@ h1 {
 }
 
 body h5.text-secondary {
-    font-family: monospace, Arial;
+    font-family: Arial;
     font-weight: 700;
 }
 
 body p.text-secondary {
-    font-family: monospace, Arial;
+    font-family: Arial;
     font-style: italic;
     font-weight: 700;
 }
