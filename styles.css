@@ -15,12 +15,12 @@ h1 {
 }
 
 body h5.text-secondary {
-    font-family: monospace, Arial;
+    font-family: Space Mono, Arial;
     font-weight: bold;
 }
 
 body p.text-secondary {
-    font-family: calibri;
+    font-family: Space Mono, Arial;
     font-style: italic;
     font-weight: bold;
 }
