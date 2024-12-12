@@ -11,18 +11,18 @@ body {
 /* Heading styles */
 h1 {
     font-family: Arial;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 body h5.text-secondary {
-    font-family: Arial;
-    font-weight: 700;
+    font-family: monospace, Arial;
+    font-weight: bold;
 }
 
 body p.text-secondary {
-    font-family: Arial;
+    font-family: calibri;
     font-style: italic;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 /* Button styles */
