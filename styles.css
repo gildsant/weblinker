@@ -25,18 +25,8 @@ body p.text-secondary {
     font-weight: bold;
 }
 
-/* Button styles */
-.custom-btn {
-    background-color: #0a06fc6c;
-    border-color: #0a06fc6c;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    font-size: 1.2rem;
-}
-
-.custom-btn:hover {
-    background-color: #363636;
-    border-color: white;
+body p.text-light{
+    font-family: Space Mono, Arial;
 }
 
 /* Footer styles */
