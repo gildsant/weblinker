@@ -8,10 +8,6 @@ body {
     overflow: hidden;
 }
 
-section {
-    padding: 4rem;
-}
-
 /* Heading styles */
 h1 {
     font-family: Arial;
