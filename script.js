@@ -4,7 +4,7 @@ const starsContainer = document.getElementById('stars-container');
 // Function to create stars and add them to the container
 function createStars() {
     // Define the total number of stars
-    const totalStars = 100;
+    const totalStars = 150;
 
     // Get the dimensions of the window
     const maxWidth = window.innerWidth;
