@@ -12,13 +12,10 @@ body {
     font-family: Space mono, Arial;
     background-color: #000;
     color: #fff;
-    transform: translateY(-50px);
-    
 }
 
 .container {
     text-align: center;
-    padding: 0;
 }
 /* Heading styles */
 h1 {
