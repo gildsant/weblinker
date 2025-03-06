@@ -12,11 +12,11 @@ body {
     font-family: Space mono, Arial;
     background-color: #000;
     color: #fff;
+    transform: translateY(-40px);
 }
 
 .container {
     text-align: center;
-    transform: translateY(-50px);
 }
 /* Heading styles */
 h1 {
@@ -44,7 +44,6 @@ footer {
     background-color: transparent;
     color: #ffffff;
     position: static;
-    transform: translateY(-50px);
 }
 
 footer a {
