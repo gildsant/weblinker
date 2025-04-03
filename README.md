@@ -1,2 +1,6 @@
-# 🔗 Linker
-<p>🌐 A clean and simple link hub.<br>📌Live: www.gildsant.com<p/>
+# 🔗 Linker  
+A simple webpage with my important links. 
+
+🚀 **Live:** [www.gildsant.com](#)  
+🛠️ Built with **HTML, CSS & JavaScript** | Hosted on **GitHub Pages**  
+
