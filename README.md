@@ -1,5 +1,5 @@
 ## 🔗 Gildsant.me  
 A simple webpage with my important links.  
 
-📌 **Live:** [www.gildsant.com](https://www.gildsant.com)  
+📌 **Live:** [www.gildsant.me](https://www.gildsant.me)  
 🛠️ Hosted on **GitHub Pages**
