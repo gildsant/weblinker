@@ -52,7 +52,7 @@ function createBootScreen() {
         color: #fff;
         margin-bottom: 10px;
     `;
-    bootText.textContent = 'Initializing...';
+    bootText.textContent = 'Initializing';
 
     // System info
     const systemInfo = document.createElement('div');
@@ -121,7 +121,7 @@ function createLoadingOverlay(linkType = 'default') {
         color: #fff;
         margin-bottom: 10px;
     `;
-    loadingText.textContent = 'Connecting...';
+    loadingText.textContent = 'Connecting';
 
     // Link system info
     const linkInfo = document.createElement('div');
@@ -135,8 +135,8 @@ function createLoadingOverlay(linkType = 'default') {
     
     // Get specific text for each link
     const linkTexts = {
-        'github': 'gildsant.github.profile',
-        'linkedin': 'gildsant.linkedin.professional',
+        'github': 'gildsant.github.projects',
+        'linkedin': 'gildsant.linkedin.profile',
         'instagram': 'gildsant.instagram.social',
         'twitter': 'gildsant.twitter.updates',
         'email': 'gildsant.email.contact',
