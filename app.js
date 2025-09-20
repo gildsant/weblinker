@@ -60,10 +60,9 @@ function createBootScreen() {
         font-family: 'Space Mono', monospace;
         font-size: 12px;
         color: #fff;
-        opacity: 0;
-        animation: typeIn 0.5s ease 1.5s forwards;
+        opacity: 1;
     `;
-    systemInfo.textContent = 'gildsant.system.ready';
+    systemInfo.textContent = 'weblinker.system';
 
     // Assembly boot screen
     bootContainer.appendChild(spinner);
@@ -129,18 +128,18 @@ function createLoadingOverlay(linkType = 'default') {
         font-family: 'Space Mono', monospace;
         font-size: 12px;
         color: #fff;
-        opacity: 0;
-        animation: typeIn 0.5s ease 1.5s forwards;
+        opacity: 1;
     `;
     
     // Get specific text for each link
     const linkTexts = {
-        'github': 'gildsant.github.projects',
-        'linkedin': 'gildsant.linkedin.profile',
-        'instagram': 'gildsant.instagram.social',
-        'twitter': 'gildsant.twitter.updates',
-        'email': 'gildsant.email.contact',
-        'default': 'gildsant.system.redirect'
+        'github': 'github.projects',
+        'linkedin': 'linkedin.profile',
+        'instagram': 'instagram.social',
+        'twitter': 'twitter.updates',
+        'email': 'email.contact',
+        'spotify': 'spotify.profile',
+        'default': 'system.redirect'
     };
     
     linkInfo.textContent = linkTexts[linkType] || linkTexts['default'];
@@ -210,6 +209,7 @@ function showLoadingAndRedirect(url) {
     else if (url.includes('instagram.com')) linkType = 'instagram';
     else if (url.includes('twitter.com') || url.includes('x.com')) linkType = 'twitter';
     else if (url.includes('mailto:')) linkType = 'email';
+    else if (url.includes('spotify.com')) linkType = 'spotify';
     
     // Create and show overlay with specific link type
     const overlay = createLoadingOverlay(linkType);
