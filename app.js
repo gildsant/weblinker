@@ -71,7 +71,6 @@ function createLoadingOverlay(linkType = 'default') {
         'instagram': 'instagram.social',
         'twitter': 'twitter.updates',
         'email': 'email.contact',
-        'spotify': 'spotify.profile',
         'default': 'system.redirect'
     };
     
@@ -116,7 +115,6 @@ function showLoadingAndRedirect(url) {
     else if (url.includes('instagram.com')) linkType = 'instagram';
     else if (url.includes('twitter.com') || url.includes('x.com')) linkType = 'twitter';
     else if (url.includes('mailto:')) linkType = 'email';
-    else if (url.includes('spotify.com')) linkType = 'spotify';
     
     // Create and show overlay with specific link type
     const overlay = createLoadingOverlay(linkType);
