@@ -2,76 +2,9 @@
  * Project: weblinker
  * Author: gildsant
  * File: app.js
- * Description: Boot screen and loading animation for personal webpage
+ * Description: Loading animation for social links on personal webpage
  * Date: 2024-10-01
  */
-
-// Function to create initial boot screen
-function createBootScreen() {
-    const bootOverlay = document.createElement('div');
-    bootOverlay.id = 'boot-overlay';
-    bootOverlay.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #000;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 10000;
-        opacity: 1;
-    `;
-
-    // Boot container
-    const bootContainer = document.createElement('div');
-    bootContainer.style.cssText = `
-        text-align: center;
-        color: #fff;
-    `;
-
-    // Animated spinner (same as links)
-    const spinner = document.createElement('div');
-    spinner.style.cssText = `
-        width: 50px;
-        height: 50px;
-        border: 3px solid #333;
-        border-top: 3px solid #fff;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin: 0 auto 20px;
-    `;
-
-    // Boot text
-    const bootText = document.createElement('div');
-    bootText.style.cssText = `
-        font-family: 'Space Mono', monospace;
-        font-size: 16px;
-        color: #fff;
-        margin-bottom: 10px;
-    `;
-    bootText.textContent = 'Initializing';
-
-    // System info
-    const systemInfo = document.createElement('div');
-    systemInfo.style.cssText = `
-        font-family: 'Space Mono', monospace;
-        font-size: 12px;
-        color: #fff;
-        opacity: 1;
-    `;
-    systemInfo.textContent = 'weblinker.system';
-
-    // Assembly boot screen
-    bootContainer.appendChild(spinner);
-    bootContainer.appendChild(bootText);
-    bootContainer.appendChild(systemInfo);
-    bootOverlay.appendChild(bootContainer);
-
-    return bootOverlay;
-}
 
 // Function to create loading overlay
 function createLoadingOverlay(linkType = 'default') {
@@ -167,37 +100,11 @@ function addLoadingStyles() {
             to { opacity: 1; }
         }
         
-        @keyframes typeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
         .loading-fade-in {
             animation: fadeIn 0.3s ease;
         }
     `;
     document.head.appendChild(style);
-}
-
-// Function to show boot screen on page load
-function showBootScreen() {
-    // Hide main content initially
-    document.body.style.overflow = 'hidden';
-    
-    // Create and show boot screen
-    const bootOverlay = createBootScreen();
-    document.body.appendChild(bootOverlay);
-    
-    // Remove boot screen after 3 seconds and show main content
-    setTimeout(() => {
-        bootOverlay.style.opacity = '0';
-        bootOverlay.style.transition = 'opacity 0.5s ease';
-        
-        setTimeout(() => {
-            document.body.removeChild(bootOverlay);
-            document.body.style.overflow = 'auto';
-        }, 500);
-    }, 3000);
 }
 
 // Main loading function
@@ -253,9 +160,6 @@ function init() {
     // Add CSS styles
     addLoadingStyles();
     
-    // Show boot screen immediately
-    showBootScreen();
-    
     // Wait for DOM to load completely for link handlers
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', setupLinkHandlers);
@@ -268,5 +172,4 @@ function init() {
 init();
 
 // Debug log
-console.log('🚀 Boot system initialized!');
 console.log('🔗 Link loading system ready!');
